@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"statsd",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "statsd",
+    "description": "api documentation for [statsd (v0.8.0)](https://github.com/etsy/statsd) [![npm package](https://img.shields.io/npm/v/npmdoc-statsd.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-statsd) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-statsd.svg)](https://travis-ci.org/npmdoc/node-npmdoc-statsd)",
     "devDependencies": {
-        "statsd": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "statsd": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-statsd",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-statsd",
+    "keywords": [
+        "documentation",
+        "statsd"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_statsd.js",
+    "name": "npmdoc-statsd",
+    "nameAlias": "npmdoc_statsd",
+    "nameOriginal": "npmdoc-statsd",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-statsd.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
