@@ -1,0 +1,19 @@
+<svg height="254" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="254" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">8 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ statsd@0.8.0 </tspan>
+<tspan x="10" y="90">  ├── generic-pool@2.2.0 </tspan>
+<tspan x="10" y="106">  ├─┬ hashring@3.2.0 </tspan>
+<tspan x="10" y="122">  │ ├── connection-parse@0.0.7 </tspan>
+<tspan x="10" y="138">  │ └── simple-lru-cache@0.0.2 </tspan>
+<tspan x="10" y="154">  ├─┬ modern-syslog@1.1.2 </tspan>
+<tspan x="10" y="170">  │ └── nan@2.6.1 </tspan>
+<tspan x="10" y="186">  └─┬ winser@0.1.6 </tspan>
+<tspan x="10" y="202">    ├─┬ commander@1.3.1 </tspan>
+<tspan x="10" y="218">    │ └── keypress@0.1.0 </tspan>
+<tspan x="10" y="234">    └── sequence@2.2.1</tspan>
+</text>
+</svg>
